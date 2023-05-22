@@ -82,4 +82,10 @@ class Interview(BaseModel):
 
     def __str__(self):
         return str(self.final_score)
+    
+class QuestionType(BaseModel):
+    question=models.CharField(max_length=200,null=True,blank=True)
+    question_type=models.CharField(max_length=100,null=True,blank=True)
 
+    def __str__(self):
+        return self.question_type
