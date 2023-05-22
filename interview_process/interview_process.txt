@@ -1,0 +1,20 @@
+Interview Process:
+
+1) candidate: name, email, phone_number, why would you like join us: college, technology, college_percent,branch, interview_time, written_test_mark, percentage_for the inteview, pass_or_fail, create_at, updated_at
+
+2) question: name,  answer, dificulty, technology, time, pointer:
+
+3)Interviews: candidate fk, questions_result_jsonfields:{question_id=1, pointer: 1 to 5}, final_score
+  candiate_id = 1
+  data = [{ question:1, pointer:1}, { question:2, pointer:2}.... ]
+
+  def data():
+    for quest in request.data():    
+     Initerview.objects.create(candidate=request.data.candidate, answer=request.data)
+
+>>>>>>>>>>>>>APi>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+1) register candidate, candidate list_api
+2) create question api, update_question, question_list
+3) Create Interview
+4) Show result day vise
+5) write all api test case
